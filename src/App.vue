@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-     <router-link to="/">Home</router-link> |
-        <router-view/>
+
+    <el-container>
+      <el-header>Header</el-header>
+
+      <el-main>Main</el-main>
+
+      <el-footer>
+        <Footer/>
+      </el-footer>
+    </el-container>
 
 
   </div>
@@ -10,11 +18,12 @@
 
 
 <script >
+import footer from "@/components/Footer.vue"
 
 
 export default {
   components:{
-
+footer
   },
   data(){
     return{

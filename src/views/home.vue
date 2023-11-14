@@ -1,9 +1,9 @@
 
 <template>
-  <div id="app">
+  <div id="home">
 
     <!--  登录展示这个-->
-    <div class="is_login" v-if="islogin">
+
       <Banner/>
       <AppNav/>
       <div class="main-content">
@@ -12,7 +12,7 @@
       </div>
       <Footer class="app-footer"></Footer>
     </div>
-  </div>
+
 
 </template>
 
