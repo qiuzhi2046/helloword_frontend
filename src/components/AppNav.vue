@@ -12,7 +12,10 @@
     <el-menu-item index="4">资讯</el-menu-item>
     <el-menu-item index="5" class="logo" style="margin: auto">
       <p>helloword.ai</p>
-      <img src="src/assets/logo.svg" alt="logo" style="height: 20px">
+      <img src="../assets/img/logo.svg" alt="logo" style="height: 20px">
+    </el-menu-item>
+    <el-menu-item index="6" class="logo" style="">
+      <a href="" @click="showLoginModal">登录</a>
     </el-menu-item>
   </el-menu>
 
@@ -23,18 +26,24 @@
 
 
 export default {
+components:{
 
+},
+  data() {
+    return {
+      isLoginModalVisible: false
+    };
+  },
+  methods: {
+    showLoginModal() {
+      this.isLoginModalVisible = true;
+    }
+  }
 }
 </script>
 
 <style >
-.el-menu {
-  background-color: #333; /* 暗色背景 */
-  color: #fff; /* 白色文字 */
-}
 
-.el-menu-item:focus, .el-menu-item:hover {
-  background-color: #555; /* 深灰色背景 */
-}
+
 
 </style>

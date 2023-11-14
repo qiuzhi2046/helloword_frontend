@@ -1,0 +1,14 @@
+/* global.css */
+/*全局样式*/
+
+body {
+    font-family: "微软雅黑 Light", sans-serif;
+    font-size: 20px;
+}
+
+/* 覆盖Element UI的样式 */
+.el-button {
+    font-family: "微软雅黑 Light", sans-serif;
+    /* 其他需要覆盖的样式 */
+    font-size: 20px;
+}

@@ -27,25 +27,6 @@ export default {
 </script>
 
 <style>
-.tools-view {
-  padding: 20px;
-}
 
-.tool-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.tool-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  width: 200px;
-  text-align: center;
-}
-
-.tool-card h3 {
-  margin-top: 0;
-}
 </style>

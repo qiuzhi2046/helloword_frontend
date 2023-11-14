@@ -33,9 +33,10 @@
 .footer {
   color: #333; /* 黑灰色 */
   text-align: center;
-  padding: 0px 0;
+  padding: 0 0;
   bottom: 0;
   width: 100%;
+
 }
 
 .footer-content {

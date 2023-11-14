@@ -32,39 +32,5 @@ export default {
 </script>
 
 <style>
-.study-view {
-  padding: 20px;
-  margin: auto;
-}
 
-.introduction {
-  margin-bottom: 20px;
-}
-
-.video-player {
-  margin-bottom: 20px;
-}
-
-.materials {
-  margin-bottom: 20px;
-}
-
-.materials ul {
-  list-style: none;
-  padding: 0;
-}
-
-.materials li a {
-  text-decoration: none;
-  color: #2c3e50;
-}
-
-.materials li a:hover {
-  text-decoration: underline;
-}
-.video-player {
-  width: 480px; /* 你希望的视频播放器宽度 */
-  height: 480px; /* 你希望的视频播放器高度 */
-  margin: auto; /* 如果你希望它在其容器中居中 */
-}
 </style>
