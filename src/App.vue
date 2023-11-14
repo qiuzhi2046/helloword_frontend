@@ -1,13 +1,26 @@
 <template>
   <div id="app">
-
+<!--这里是el的布局容器，整个app都在这里面-->
     <el-container>
-      <el-header>Header</el-header>
+<!--      这里是有个置顶logo-->
+      <el-header>
+        <el-row justify="center"> <!--  justify=控制这个标签内的子标签的对齐  -->
+            <div>helloword.ai</div>
+        </el-row>
+      </el-header>
+<!--这里是主要的登录页面-->
+      <el-main height="800px">
+        <home v-if="is_login"></home>
+        <login v-else ></login>
+      </el-main>
 
-      <el-main>Main</el-main>
+      <el-footer  >
 
-      <el-footer>
-        <Footer/>
+          <el-row justify="center">
+            <el-col :span="24" >
+              <Footer ></Footer>
+            </el-col>
+          </el-row>
       </el-footer>
     </el-container>
 
@@ -18,16 +31,18 @@
 
 
 <script >
-import footer from "@/components/Footer.vue"
+import Footer from "@/components/Footer.vue"
+import home from "@/views/home.vue"
+import login from "@/views/login.vue"
 
 
 export default {
   components:{
-footer
+Footer,login,home
   },
   data(){
     return{
-
+      is_login:false
     }
   }
 }
@@ -35,8 +50,14 @@ footer
 
 
 <style>
+#app{
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使容器占满整个视口高度 */
+}
 
-
-
+el-main {
+  flex-grow: 1; /* 使主内容区域占据所有可用空间 */
+}
 
 </style>

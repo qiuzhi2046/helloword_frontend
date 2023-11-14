@@ -10,7 +10,7 @@
         <SideNav/>
 
       </div>
-      <Footer class="app-footer"></Footer>
+
     </div>
 
 

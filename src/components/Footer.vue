@@ -1,5 +1,7 @@
 <template>
-  <footer class="footer">
+  <div class="footer">
+
+
     <div class="footer-content">
       <!-- Footer sections can go here -->
       <div class="footer-section">
@@ -26,16 +28,18 @@
     <div class="footer-bottom">
       <p>Copyright © helloword.ai版权所有 | 京ICP备17072161号-1</p>
     </div>
-  </footer>
+
+  </div>
 </template>
 
-<style scoped>
+<style >
 .footer {
   color: #333; /* 黑灰色 */
   text-align: center;
   padding: 0 0;
   bottom: 0;
   width: 100%;
+  background-color: #fff;
 
 }
 
@@ -55,9 +59,9 @@
 }
 
 .footer-bottom {
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 5px;
-  background-color: antiquewhite;
+
 }
 </style>
 
