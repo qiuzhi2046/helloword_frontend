@@ -14,32 +14,27 @@
         <el-row justify="center"  >
           <el-col :span="8" class="box" >
             <div class="content">
-                <input type="text" class="input" placeholder="手机号码或电子邮件">
-                <input type="password" class="input" placeholder="密码">
+              <input type="text" class="input" placeholder="手机号码或电子邮件">
+              <input type="password" class="input" placeholder="注册邀请码">
             </div>
 
             <div class="end">
               <el-row>
                 <el-col :span="18">
-                  <el-button color="#026eda" round class="btn" size="large">登录
+                  <el-button color="#026eda" round class="btn" size="large">立即注册
                   </el-button>
                 </el-col>
               </el-row>
-              <div>
-                  <input type="checkbox" class="reminder_pdw"> 记住我的密码
-              </div>
+
               <div class="sign_in">
-                <div class="forget_div">
-                <router-link to="/" class="forget">忘记了密码？</router-link> <span> &#8599;</span>
-                </div>
+
                 <div>
-                <span>没有helloword账号？</span> <span @click="go_sign" href="" class="create_account">创建你的helloword账号</span> <span> &#8599;</span>
+                  <span>没有helloword注册邀请码？</span><a href="" class="create_account">申请你的helloword邀请码</a> <span> &#8599;</span>
                 </div>
               </div>
             </div>
           </el-col>
         </el-row>
-
       </el-main>
 
     </el-container>
@@ -49,14 +44,6 @@
 </template>
 
 <script >
-export default {
-  methods:{
-    go_sign(){
-      this.$emit('go_sign',true)
-    }
-  }
-
-}
 
 </script>
 
@@ -114,7 +101,7 @@ input:focus::placeholder {
 }
 .content{
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   justify-items: center;
 }
 .reminder_pdw{
@@ -145,15 +132,6 @@ a{
 }
 .forget_div{
   margin-bottom: 5px;
-}
-.create_account {
-  color: #06c;
-  cursor: pointer;
-}
-
-.create_account:hover {
-  color: #039;
-  text-decoration: none;
 }
 
 

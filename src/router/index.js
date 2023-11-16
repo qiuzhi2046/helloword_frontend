@@ -3,6 +3,7 @@ import tools from '@/views/tools.vue' //
 import study from "@/views/study.vue";
 import home from "@/views/home.vue";
 import user from "@/views/user.vue";
+import sign from "@/views/sign.vue";
 
 
 
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/user',
       name: 'user',
       component: user
+    },
+    {
+      path: '/sign',
+      name: 'sign',
+      component: sign
     },
   ]
 })

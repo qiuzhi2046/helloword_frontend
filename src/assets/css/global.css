@@ -2,20 +2,25 @@
 /*全局样式*/
 
 body {
-    font-family: "微软雅黑 Light", sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
     margin: 0;
 }
 
 /* 覆盖Element UI的样式 */
 .el-button {
-    font-family: "微软雅黑 Light", sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     /* 其他需要覆盖的样式 */
     font-size: 15px;
 }
 
 .el-container {
-    font-family: "微软雅黑 Light", sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     /* 其他需要覆盖的样式 */
     font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
