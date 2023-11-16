@@ -5,7 +5,7 @@
       <el-header  height="250px"  class="el-header">
         <el-row >
           <el-col :span="2" class="logo">
-            <div class="logo">helloword.ai</div>
+            <div class="logo" >helloword.ai</div>
           </el-col>
         </el-row>
       </el-header>
@@ -19,18 +19,19 @@
             </div>
 
             <div class="end">
+              <div>
+                <input type="checkbox" class="reminder_pdw" > <span style="font-size: 15px ;color: gray">记住我的密码</span>
+              </div>
               <el-row>
                 <el-col :span="18">
-                  <el-button color="#026eda" round class="btn" size="large">登录
+                  <el-button color="#026eda" round class="btn" size="large">立即登录
                   </el-button>
                 </el-col>
               </el-row>
-              <div>
-                  <input type="checkbox" class="reminder_pdw"> 记住我的密码
-              </div>
+
               <div class="sign_in">
                 <div class="forget_div">
-                <router-link to="/" class="forget">忘记了密码？</router-link> <span> &#8599;</span>
+                <router-link to="/" class="forget"> &nbsp&nbsp&nbsp&nbsp忘记了密码？</router-link> <span> &#8599;</span>
                 </div>
                 <div>
                 <span>没有helloword账号？</span> <span @click="go_sign" href="" class="create_account">创建你的helloword账号</span> <span> &#8599;</span>
@@ -63,7 +64,7 @@ export default {
 <style >
 .login{
   height: 100vh;
-  background-color: white;
+  background-color: #FBFBFB;
 }
 .box{
   width: 700px;
@@ -85,13 +86,13 @@ export default {
 }
 .input{
   height: 60px;
-  border-radius: 15px;
-  border: 0.8px solid black;
+  border-radius: 16px;
+  border: 0.8px solid #464545;
   font-size: 15px;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
   padding-left: 40px;
 }
 .input:focus {
@@ -101,7 +102,7 @@ export default {
 input::placeholder {
   color: gray;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding-left: 0px;
+  padding-left: 0;
 }
 input:focus::placeholder {
   color: white; /* 或任何其他颜色 */

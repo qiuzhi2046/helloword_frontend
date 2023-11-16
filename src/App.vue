@@ -3,9 +3,9 @@
 <!--这里是el的布局容器，整个app都在这里面-->
     <el-container>
 <!--      这里是有个置顶logo-->
-      <el-header>
-        <el-row justify="center"> <!--  justify=控制这个标签内的子标签的对齐  -->
-            <div>helloword.ai</div>
+      <el-header style="background-color:#f8f8f8 ">
+        <el-row justify="center" > <!--  justify=控制这个标签内的子标签的对齐  -->
+            <div style="padding-bottom: 20px">helloword.ai</div>
         </el-row>
       </el-header>
 
