@@ -63,8 +63,7 @@ export default {
 
 <style >
 .login{
-  background-color: #912c2c;
-  height: 300px;
+  height: 500px;
   width: 100%;
 }
 .el-header {

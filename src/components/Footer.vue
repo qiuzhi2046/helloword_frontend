@@ -2,11 +2,17 @@
 
   <div class="footerhead">
     <hr>
-  </div>
+  </div >
   <div class="footerbox">
-    <span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 联系我们 </span>
-    <span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 关注我们 </span>
-<span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 加入我们 </span>
+    <span style="margin: 0 55px ;color: #757474;font-weight: bolder"> 联系我们 </span>
+    <span style="margin: 0 55px ;color: #757474;font-weight: bolder"> 关注我们 </span>
+<span style="margin: 0 55px ;color: #757474;font-weight: bolder"> 加入我们 </span>
+    <br>
+    <br>
+
+    <br>
+    <br>
+
     <div>
       <font-awesome-icon icon="fa-solid faPhone" />
     </div>
@@ -51,19 +57,20 @@
   padding: 8px 0;
 }
 .footerhead{
-  margin-bottom: 0.1px;
+  margin-top: 100px;
+  margin-bottom: 0.5px;
 }
 hr{
   border: none;        /* 移除默认边框 */
-  height: 0.3px;         /* 线条高度 */
-  background-color: #bbbbbe; /* 线条颜色 */
+  height: 0.2px;         /* 线条高度 */
+  background-color: #cacacc; /* 线条颜色 */
 }
 .notice{
 
   padding: 8px 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
-p{
+.footer-content p{
   margin-bottom: 8px;
 }
 

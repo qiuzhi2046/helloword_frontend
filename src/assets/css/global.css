@@ -29,3 +29,7 @@ body {
 .el-footer{
  --el-footer-padding: 0 0px;
 }
+.el-main{
+    padding: 0 0;
+    overflow: clip;
+}

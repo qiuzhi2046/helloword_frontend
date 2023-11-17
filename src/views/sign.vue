@@ -49,8 +49,11 @@
 
 <style >
 .login{
-  height: 100vh;
-  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box{
   width: 700px;
@@ -73,12 +76,12 @@
 .input{
   height: 60px;
   border-radius: 15px;
-  border: 0.8px solid black;
+  border: 0.5px solid #989595;
   font-size: 15px;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
   padding-left: 40px;
 }
 .input:focus {
@@ -88,7 +91,7 @@
 input::placeholder {
   color: gray;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding-left: 0px;
+  padding-left: 0;
 }
 input:focus::placeholder {
   color: white; /* 或任何其他颜色 */
@@ -104,11 +107,7 @@ input:focus::placeholder {
   flex-direction: column;
   justify-items: center;
 }
-.reminder_pdw{
-  margin-top: 25px;
-  font-size: 15px;
-  color: gray;
-}
+
 .end{
   display: flex;
   flex-direction: column;
@@ -123,16 +122,12 @@ input:focus::placeholder {
   flex-direction: column;
   align-items: center;
 }
-.forget{
-  margin-bottom: 5px;
-}
+
 a{
   color: #06c;
   text-decoration: none;
 }
-.forget_div{
-  margin-bottom: 5px;
-}
+
 
 
 

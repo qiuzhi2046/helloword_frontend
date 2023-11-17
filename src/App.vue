@@ -45,7 +45,7 @@ Footer,login,home,sign,AppNav
   },
   data(){
     return{
-      is_login:false,
+      is_login:true,
       show_login:true,
     }
   },
