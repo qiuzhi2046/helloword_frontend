@@ -1,24 +1,32 @@
 
 <template>
-  <el-menu mode="horizontal">
-    <el-menu-item index="1">
-      <router-link to="/tools">工具</router-link>
-    </el-menu-item>
-    <el-menu-item index="2">
-      <router-link to="/study">学习</router-link>
-    </el-menu-item>
+  <div class="appnav">
+    <div>
+      <span class="navlogo">Helloword.ai</span>
+    </div>
+    <div>
+      <span>Ai 工具</span>
+    </div>
+    <div>
+      <span>Ai 学习</span>
+    </div>
+    <div>
+      <span>Ai 账号</span>
+    </div>
+    <div>
+      <span>提示词专区</span>
+    </div>
+    <div>
+      <span>技术支持</span>
+    </div>
+    <div>
+      <span>合作</span>
+    </div>
+    <div>
+      <font-awesome-icon icon="fa-solid fa-globe fa-5x" />
 
-    <el-menu-item index="3">社群</el-menu-item>
-    <el-menu-item index="4">资讯</el-menu-item>
-    <el-menu-item index="5" class="logo" style="margin: auto">
-      <p>helloword.ai</p>
-      <img src="../assets/img/logo.svg" alt="logo" style="height: 20px">
-    </el-menu-item>
-    <el-menu-item index="6" class="logo" style="">
-      <a href="" @click="showLoginModal">登录</a>
-    </el-menu-item>
-  </el-menu>
-
+    </div>
+  </div>
 
 </template>
 
@@ -26,24 +34,27 @@
 
 
 export default {
-components:{
-
-},
-  data() {
-    return {
-      isLoginModalVisible: false
-    };
-  },
-  methods: {
-    showLoginModal() {
-      this.isLoginModalVisible = true;
-    }
-  }
 }
 </script>
 
 <style >
-
+.appnav {
+  color: #3b3b3b;
+  font-size: 12px;
+  font-weight: 400;
+  font-family:   Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 300px;
+}
+span{
+  cursor: pointer;
+}
+.navlogo{
+  font-size: 15px;
+  color: black;
+  font-weight: normal;
+}
 
 
 </style>

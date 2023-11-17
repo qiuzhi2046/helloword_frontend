@@ -1,71 +1,74 @@
 <template>
-  <div class="footer">
 
+  <div class="footerhead">
+    <hr>
+  </div>
+  <div class="footerbox">
+    <span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 联系我们 </span>
+    <span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 关注我们 </span>
+<span style="margin: 0 40px ;color: #969595;font-weight: bolder"> 加入我们 </span>
+    <div>
+      <font-awesome-icon icon="fa-solid faPhone" />
+    </div>
 
     <div class="footer-content">
-      <!-- Footer sections can go here -->
-      <div class="footer-section">
-        <p>联系方式</p>
-        <p>Email: contact@example.com</p>
-        <p>Phone: 123-456-7890</p>
+      <div class="notice">Helloword.ai 是一个友好的开源AI社区，所有的学习资料将免费为您提供。
       </div>
-      <div class="footer-section">
-        <p>感谢方</p>
-        <p>Vue Community</p>
-        <p>Open Source Contributors</p>
-      </div>
-      <div class="footer-section">
-        <p>资源来源</p>
-        <p>Vue.js Official</p>
-        <p>Vite.js</p>
-      </div>
-      <div class="footer-section">
-        <p>其他信息</p>
-        <p>隐私政策</p>
-        <p>条款与条件</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Copyright © helloword.ai版权所有 | 京ICP备17072161号-1</p>
-    </div>
+      <p>使用本网站即表示您同意遵守我们的 <a href="#">使用条款</a> 和<a href="#"> 隐私政策</a>。</p>
+      <p>有任何问题，请通过 &nbsp; email@helloword.ai &nbsp;与我们联系。</p>
+      <p>关注我们的 <a href="#">Bilibili</a> 和 <a href="#">微信公众号</a> 或 <a href="#">Twitter</a>   了解最新动态。</p>
 
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>Copyright&nbsp; ©  2023 helloword.ai  &nbsp; <span> 保留所有权利.</span> </p>
+
+    </div>
   </div>
 </template>
 
 <style >
-.footer {
-  color: #5b5a5a; /* 黑灰色 */
+.footerbox {
+  color: #969595; /* 黑灰色 */
   text-align: center;
   bottom: 0;
   width: 100%;
   background-color: #f8f8f8;
-  padding-top: 15px;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-
+  padding: 30px 0;
 }
 
 .footer-content {
   display: flex;
-
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-
-.footer-section h4 {
+  flex-direction: column;
   margin-bottom: 10px;
-  font-size: 15px;
-  color: #3f3d3d;
-}
-
-.footer-section p {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
+  justify-content: center;
+  font-size: 0.75em;
 }
 
 .footer-bottom {
   font-size: 0.7em;
-  padding: 5px;
+  padding: 8px 0;
 }
+.footerhead{
+  margin-bottom: 0.1px;
+}
+hr{
+  border: none;        /* 移除默认边框 */
+  height: 0.3px;         /* 线条高度 */
+  background-color: #bbbbbe; /* 线条颜色 */
+}
+.notice{
+
+  padding: 8px 0;
+  margin-bottom: 0px;
+}
+p{
+  margin-bottom: 8px;
+}
+
+
 </style>
 
+<script >
+</script>

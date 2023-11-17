@@ -5,7 +5,7 @@
       <el-header  height="250px"  class="el-header">
         <el-row >
           <el-col :span="2" class="logo">
-            <div class="logo" >helloword.ai</div>
+            <div class="logo" >Helloword.ai</div>
           </el-col>
         </el-row>
       </el-header>
@@ -63,16 +63,10 @@ export default {
 
 <style >
 .login{
-  height: 100vh;
-  background-color: #FBFBFB;
+  background-color: #912c2c;
+  height: 300px;
+  width: 100%;
 }
-.box{
-  width: 700px;
-  height: 450px;
-  background-color: white;
-  border-radius: 20px;
-}
-
 .el-header {
   display: flex;
   justify-content: center;
@@ -82,22 +76,20 @@ export default {
   font-size: 50px;
   color: black;
   margin: 20px 0;
-
 }
 .input{
   height: 60px;
   border-radius: 16px;
-  border: 0.8px solid #464545;
+  border: 0.8px solid #989595;
   font-size: 15px;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding-left: 40px;
 }
 .input:focus {
-  outline: 1px solid #026eda; /* 红色实线轮廓 */
-
+  outline: 5px solid #026eda; /* 红色实线轮廓 */
+  border: 2.5px solid #026eda;
 }
 input::placeholder {
   color: gray;
@@ -156,7 +148,6 @@ a{
   color: #039;
   text-decoration: none;
 }
-
 
 
 </style>
