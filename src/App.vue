@@ -3,9 +3,9 @@
 <!--这里是el的布局容器，整个app都在这里面-->
     <el-container>
 <!--      这里是有个置顶logo-->
-
+      <div class="header">
             <AppNav></AppNav>
-
+      </div>
 
 <!--这里是主要的登录页面-->
       <el-main height="800px">
@@ -62,6 +62,8 @@ Footer,login,home,sign,AppNav
 #app{
 
 }
+
+
 
 
 </style>

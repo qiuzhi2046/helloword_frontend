@@ -1,21 +1,22 @@
 
 <template>
   <div class="appnav">
-    <div>
+    <div class="gohome">
       <span class="navlogo">Helloword.ai</span>
     </div>
+
     <div>
-      <span>Ai 工具</span>
+      <span>Ai 导航</span>
     </div>
-    <div>
-      <span>Ai 学习</span>
-    </div>
-    <div>
-      <span>Ai 账号</span>
-    </div>
-    <div>
-      <span>提示词专区</span>
-    </div>
+<!--    <div>-->
+<!--      <span>Ai 学习</span>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <span>Ai 账号</span>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <span>提示词专区</span>-->
+<!--    </div>-->
     <div>
       <span>技术支持</span>
     </div>
@@ -44,7 +45,7 @@ export default {
   font-weight: 400;
   font-family:   Arial, sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px 300px;
 }
 span{

@@ -1,10 +1,11 @@
 <template>
   <div class="tools-view">
-    <div class="type">
-      <p>文本生成 <br><br>&nbsp; &nbsp;&nbsp;<span>text</span> </p>
-      <p>图片生成 <br><br>&nbsp;&nbsp;&nbsp; <span>text</span> </p>
-      <p>语音生成 <br><br> &nbsp;&nbsp; &nbsp;<span>text</span> </p>
-    </div>
+
+
+   <el-container>
+
+
+    <el-main>
 
     <div class="tool-cards">
       <div class="tool-card" v-for="tool in tools" :key="tool.id">
@@ -43,13 +44,18 @@
         <el-button  @click="goToPage(tool.link)" color="#026eda" round class="btn" size="large">使用 </el-button>
       </div>
     </div>
-
-
+    </el-main>
+   </el-container>
   </div>
 </template>
 
 <script>
+import search from "../components/search.vue";
+import SideNav from "@/components/SideNav.vue";
 export default {
+  components: {
+    search,SideNav
+  },
   data() {
     return {
       tools: [
@@ -68,6 +74,9 @@ export default {
 </script>
 
 <style>
+.tools-view{
+  background-color: #f8f8f8;
+}
 .circle-image img {
   width: 200px;        /* 图片宽度 */
   height: 200px;       /* 图片高度 */
@@ -89,13 +98,13 @@ export default {
   background-color: #f8f8f8;
   border-radius: 5px;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0;
   box-sizing: border-box;
 }
 .tool-cards2{
   display: flex;
   justify-items: center;
-  justify-content: center;
+
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #313030;
   font-weight: bolder;
@@ -122,14 +131,7 @@ p{
   font-size: 13px;
   color: #726e6e;
 }
-.type{
-  background-color: #f8f8f8;
-  height: 120px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
+
 .type p{
   margin: 30px 150px;
   font-weight: bolder;
@@ -140,5 +142,7 @@ p{
   height: 100px;
   margin-bottom: 15px;
 }
+
+
 
 </style>
